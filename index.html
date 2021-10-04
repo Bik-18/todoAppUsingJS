@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/90a0a5106d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="main-page">   
+        <div class="AL">
+            <span class="T">Tasks</span>
+            <span class="L">Lists</span>
+            <span class="A" >  <button class="" id="btnPlusMain" ><i class="fas fa-plus-circle"></i></button>
+            <p class="hide">Add List</p> </span>
+
+        </div>
+        <div class="when-empty">No Items in the todo List</div>
+
+        <div class="cards-container" >
+                
+                    <div id="cardprototype" class="card" style="display: none;">
+                        <div class="content">
+                            <p id="headingContent"></p>
+                            <hr>
+                        </div>
+
+                        <div class="dynamicContenet">
+                            <div id="itemPrototype" class="item-container" style="display: none;">
+                                <p></p>
+                                <button id="completed" onclick="minus(this)"><i class="fas fa-minus-square"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="down-btns">
+                            <button id="deleteCard" onclick="deleteCard(this)"><i class="fas fa-trash"></i></button>
+                            <button id="addNewContenet" onclick="addItem(this)"><i class="fas fa-plus-circle"></i></button>
+                        </div>   
+                    </div>            
+
+        </div>
+
+        <!-- <div class="cards-container-mob hide2">
+            <a href="./triptoparis.html">
+                <button >
+                    <div class="card-box" >
+                        <p style="color:black; margin-left: 15px; font-size: 25px; font-weight: lighter;">Trip to Paris</p>
+                        
+                    </div>
+                </button>
+            </a>
+            
+        </div> -->
+            
+    </div>
+    <div class="popup-modal" id="pop-up-add-list">
+        <button id="btn-cross" style="background-color: white; color: black; font-size: 20px; position: absolute;
+            top: 5px;right: 18px; width: 5px; border-style: none;">x</button>
+
+
+        <p>Add New List</p>
+        <input type="text" id="text">
+        <button id="btn-add-new-list">ADD</button>
+    </div>
+
+    <div class="popup-modal" id="pop-up-add-item">
+        <button id="btn-cross" style="background-color: white; color: black; font-size: 20px; position: absolute;
+            top: 5px;right: 18px; width: 5px; border-style: none;">x</button>
+
+
+        <p>Add New Item</p>
+        <input type="text" id="text2">
+        <button id="btn-add-new-item">ADD</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

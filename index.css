@@ -1,0 +1,285 @@
+body{
+    margin: 0px;
+    /* background-color:turquoise; */
+    width: 100%;
+}
+.hide2{
+    display: none;
+}
+.container{
+    text-align: center;
+    width: 60%;
+    height: 100vh;
+    /* background-color: yellow; */
+    margin: auto;
+    margin-top: 100px;
+    
+}
+.AL{
+    
+    /* margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 100px; */
+    /* width: 60%; */
+    /* background-color: tomato; */
+    position: relative;
+    display: flex;
+    
+    /* justify-content: center; */
+}
+.T{
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.L{
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+
+
+
+}.A{
+    font-size: 32px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    right: 31px;
+    top: -15px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.fas{
+    font-size: 35px;
+    color: blue;
+}
+
+.cards-container{
+    /* width: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: space-between;
+    justify-self: stretch;
+    
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px; */
+    
+    
+}
+.card{
+    border: 2px solid red;
+    min-width: 200px;
+    min-height: 324px;
+    border-radius: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 4px 4px 10px  gray;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+.dynamicContenet{
+    /* height: 80%; */
+    
+}
+.item-container p{
+    color: black;
+    font-size: 20px;
+    padding: 0px 20px;
+
+}
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+#completed .fa-minus-square{
+    color: green;
+    font-size: 33px;
+}
+.down-btns{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.down-btns i{
+    margin: 0px 5px;
+}
+.down-btns .fa-plus-circle{
+    color: red;
+}
+.card .content p{
+    color:red; 
+    font-size: 27px; 
+    font-weight: lighter;
+}
+hr{
+    width: 85%;
+    margin-right: 0px;
+    margin-top: -20px;
+}
+label {
+    font-size: 20px; 
+    font-weight: 100px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.blur2{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+}
+
+.popup-modal{
+    border: 1px red solid;
+    width: 430px;
+    text-align: center;
+    height: 180px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 3px 3px 2px 2px gray;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    visibility: hidden;
+
+}
+.popup-modal>p{
+    font-size: 20px;
+    color: red;
+}
+.popup-modal>input{
+    
+    width: 300px;
+    height: 30px;
+    border-color: red;
+}
+.popup-modal>button{
+    background-color: red;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.when-empty{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    float: left;
+    display: block;
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    
+    .container{
+        width: 88%;
+        margin-top: 40px;
+        margin: 12px;
+    }
+    .AL{
+        width: 88%;
+    }
+    .A{
+        right: -10px;
+        position: absolute;
+        top: 10px;
+    }
+    .cards-container{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        margin: inherit;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 40px;
+        margin-top: 30px; */
+        
+    }
+    /* .cards-container-mob{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 40px;
+        margin-top: 30px;
+        margin-left: 0px;
+    } */
+    /* .card-box{
+        width:260px;
+        border:1px solid black;
+        border-radius: 9px;
+        height: 65px;
+        box-shadow: 3px 3px 4px grey;
+        text-align: left;
+    } */
+    .card{
+        width: 300px;
+        /* min-width: 255px; */
+    /* min-height: 324px; */
+    }
+    .card .content p{
+        word-wrap: break-word;
+    }
+    /* .item-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+    .dynamicContenet .item-container p{
+        word-wrap: break-word;
+    
+    } */
+    .popup-modal{
+        
+        width: 90%;
+        position: absolute;
+        left: 12px;
+    }
+    .popup-modal>p{
+        font-size: 20px;
+        color: red;
+    }
+    .popup-modal>input{
+        
+        width: 80%;
+        height: 30px;
+        border-color: red;
+    }
+    .popup-modal>button{
+        background-color: red;
+        width: 80px;
+        height: 30px;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        color: white;
+    }
+}
